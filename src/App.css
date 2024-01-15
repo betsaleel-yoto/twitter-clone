@@ -1,0 +1,229 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: black;
+  color: white;
+}
+button {
+  border: none;
+}
+
+input {
+  border: none;
+}
+/* la plus grande div contenant la navbar, le body et la partie search */
+
+.nav_body_search {
+  display: flex;
+  border: 2px solid red;
+  height: 100vh;
+  width: 75%;
+  margin: auto;
+}
+
+/* la navbar */
+.header {
+  border: 2px solid rgb(71, 71, 71);
+  width: 25rem;
+  height: 100vh;
+}
+.Twitter_icon {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+  right: 1px;
+}
+.nav_icon {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.espace_photo {
+  width: 3rem;
+  height: 3rem;
+  margin-top: 2px;
+  border-radius: 100%;
+  background-color: rgb(67, 67, 67);
+}
+.nom_utilisateur_bas {
+  display: flex;
+  margin-top: 20rem;
+  gap: 15px;
+}
+.menu {
+  position: relative;
+  bottom: 7px;
+  margin-left: 1rem;
+}
+.button_nav {
+  position: relative;
+  top: 5rem;
+  width: 80%;
+  margin: auto;
+  height: 3rem;
+  border-radius: 30px;
+  background-color: #1d9bf0;
+}
+.more_2_nav {
+  position: relative;
+  left: 12rem;
+  top: 1rem;
+}
+/* le body */
+
+/* en-tete */
+.timeline {
+  border: 2px solid blue;
+  width: 50%;
+  margin-left: 2rem;
+}
+
+.profile_text {
+  display: flex;
+  width: 20rem;
+}
+.profile_text p {
+  height: 2rem;
+  border: 2px solid gray;
+}
+.tweet_editor {
+  height: 5rem;
+  border: 2px solid red;
+}
+.groupe_icon {
+  border: 2px solid black;
+  display: flex;
+  gap: 20rem;
+}
+
+.button_body {
+  padding: 5px;
+  background-color: #1d9bf0;
+  border-radius: 30px;
+}
+.photo_text {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid red;
+  border-radius: 100%;
+}
+.tweet_image {
+  border: 2px dashed red;
+  height: 20rem;
+  width: 35rem;
+  max-height: 20rem;
+  max-width: 35rem;
+  border-radius: 8px;
+}
+.tweets {
+  border: 2px dashed blueviolet;
+}
+.Home_starIcon p {
+  display: flex;
+  gap: 30rem;
+}
+
+/* Tweet */
+
+.photoTweet_certif {
+  display: flex;
+  border: 2px solid rgb(148, 153, 51);
+}
+.photo_pt {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid firebrick;
+  border-radius: 100%;
+}
+
+.reaction {
+  border: 2px solid rgb(0, 255, 251);
+  display: flex;
+  gap: 7rem;
+}
+
+.Nombre {
+  position: relative;
+  bottom: 5px;
+}
+/* la partie search */
+
+.partie_search {
+  border: 2px solid green;
+  width: 30rem;
+  margin-right: 3rem;
+}
+
+/* Partie search */
+.differente_tendance {
+  display: flex;
+  gap: 12rem;
+}
+.Titre_et_Image {
+  display: flex;
+  gap: 7rem;
+}
+.Titre_et_Image,
+.differente_tendance,
+.button_more,
+.Squid {
+  padding: 4px;
+  border: 2px solid #1d9bf0;
+}
+
+.button_more {
+  border: none;
+  background: none;
+  color: #1d9bf0;
+}
+
+.newyokConteneur {
+  display: flex;
+  position: relative;
+  left: 1rem;
+  gap: 20px;
+}
+
+.input_search img {
+  width: 20px;
+  padding: 10px;
+}
+
+.input_search {
+  background-color: #6e767d;
+  border-radius: 30px;
+}
+
+.Trends {
+  background-color: #6e767d;
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+
+.partie_whoToFollow {
+  background-color: #6e767d;
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+
+.partie_whoToFollow button {
+  position: relative;
+  left: 1rem;
+}
+
+.partie_whoToFollow h1 {
+  position: relative;
+  left: 1rem;
+  padding: 5px;
+}
+
+.Follow {
+  background-color: white;
+  border-radius: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
