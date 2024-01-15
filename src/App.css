@@ -52,6 +52,9 @@ input {
   width: 25rem;
   height: 100vh;
 }
+nav {
+  font-weight: bold;
+}
 .Twitter_icon {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -89,6 +92,7 @@ input {
   border-radius: 30px;
   background-color: #1d9bf0;
   color: white;
+  font-weight: 700;
 }
 .more_2_nav {
   position: relative;
@@ -129,6 +133,10 @@ input {
   background-color: #1d9bf0;
   border-radius: 30px;
   color: white;
+  font-weight: 700;
+  position: relative;
+  bottom: 7px;
+  left: 2rem;
 }
 .photo_text {
   width: 3rem;
