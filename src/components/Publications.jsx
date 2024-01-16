@@ -1,5 +1,6 @@
 import PhotoPCertifNomProfile from "./PhotoTweet-cert-photoP";
 import ImageParagraphReation from "./ImageParagraphReaction";
+import ParagraphReaction from "./ParagraphReaction";
 function Publications() {
   return (
     <>
