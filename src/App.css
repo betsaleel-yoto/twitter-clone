@@ -9,6 +9,7 @@ body {
   background-color: black;
   color: white;
 }
+
 .Textarea_search {
   background-color: #16181c;
   color: white;
@@ -75,7 +76,7 @@ nav {
 }
 .nom_utilisateur_bas {
   display: flex;
-  margin-top: 20rem;
+  margin-top: 17.5rem;
   gap: 15px;
 }
 .menu {
@@ -213,7 +214,10 @@ nav {
   background: none;
   color: #1d9bf0;
 }
-
+#PremierButtonFooter {
+  position: relative;
+  left: 1rem;
+}
 .newyokConteneur {
   display: flex;
   position: relative;
