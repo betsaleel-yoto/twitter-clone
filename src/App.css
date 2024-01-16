@@ -12,7 +12,7 @@ body {
 
 .Textarea_search {
   background-color: #16181c;
-  color: white;
+  color: #6c7075;
   border: none;
   resize: none;
 }
@@ -26,9 +26,13 @@ body {
 }
 .Textarea_Tweets {
   background-color: black;
-  color: white;
+  color: #6c7075;
   border: none;
   resize: none;
+}
+
+.sous_titre_bas {
+  color: #6c7075;
 }
 button {
   border: none;
@@ -99,6 +103,15 @@ nav {
   position: relative;
   left: 12rem;
   top: 1rem;
+}
+
+.Page_title,
+.Nom_de_compte {
+  font-weight: 700;
+}
+
+.Sous_titre_profil {
+  color: #6c7075;
 }
 /* le body */
 
@@ -265,4 +278,23 @@ nav {
   padding-right: 10px;
   padding-top: 4px;
   padding-bottom: 4px;
+}
+
+.Trends p {
+  position: relative;
+  left: 1rem;
+}
+
+.partie_whoToFollow p {
+  position: relative;
+  right: 1rem;
+}
+
+.partie_search h2 {
+  position: relative;
+  left: 1rem;
+}
+
+.nbre_de_tweet {
+  color: #6c7075;
 }

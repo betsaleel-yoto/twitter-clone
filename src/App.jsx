@@ -71,7 +71,7 @@ function App() {
                     className="more_2_nav"
                   />
                 </p>
-                <p className="sous_titre_bas">bradley_</p>
+                <p className="sous_titre_bas">@bradley_</p>
               </div>
             </div>
           </div>

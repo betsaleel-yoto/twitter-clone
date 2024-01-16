@@ -6,11 +6,11 @@ function PhotoPCertifNomProfile() {
           <img src="" alt="" />
         </div>
         <p>
-          CNN
+          <span className="Nom_de_compte">CNN</span>
           <span className="certififie">
             <img src="../src/Icons/Verified.svg" alt="" />
           </span>
-          @CNN.7m
+          <span className="Sous_titre_profil">@CNN.7m</span>
         </p>
       </div>
     </>
