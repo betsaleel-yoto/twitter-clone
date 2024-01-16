@@ -5,7 +5,7 @@ function Publications() {
     <>
       <div className="tweets">
         <div className="titre_certifie_paragr_IconTweet">
-          <PhotoPCertifNomProfile />
+          <PhotoPCertifNomProfile NomDucompte="CNN" Certification="@CNN.7m" />
           <ImageParagraphReation />
         </div>
       </div>
