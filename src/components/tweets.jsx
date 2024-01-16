@@ -1,9 +1,11 @@
-function Tweets() {
+function Tweets(props) {
   return (
     <>
       <div className="tweet_editor">
         <div className="profile_text">
-          <div className="photo_text"></div>
+          <div className="photo_text">
+            <img src={props.PhotoDeProfil} alt="" />
+          </div>
           <textarea name="" id="" className="Textarea_Tweets">
             What's Happening?
           </textarea>
