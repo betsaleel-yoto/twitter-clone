@@ -120,12 +120,15 @@ nav {
 
 /* en-tete */
 .timeline {
-  border-left: 1px solid rgb(180, 179, 179);
-  border-right: 1px solid rgb(180, 179, 179);
   width: 50%;
   margin-left: 27rem;
+  height: 100vh;
 }
-
+.tweets {
+  width: 100%;
+  border-left: 1px solid rgb(180, 179, 179);
+  border-right: 1px solid rgb(180, 179, 179);
+}
 .profile_text {
   display: flex;
   width: 20rem;
@@ -136,8 +139,11 @@ nav {
 }
 .tweet_editor {
   height: 5rem;
+  width: 100%;
   border-top: 1px solid rgb(180, 179, 179);
   border-bottom: 1px solid rgb(180, 179, 179);
+  border-left: 1px solid rgb(180, 179, 179);
+  border-right: 1px solid rgb(180, 179, 179);
 }
 .groupe_icon {
   border: 2px solid black;
@@ -163,11 +169,17 @@ nav {
 }
 .tweet_image {
   border: 2px dashed red;
-  height: 20rem;
+  height: 16.06rem;
   width: 35rem;
-  max-height: 20rem;
+  max-height: 16.06rem;
   max-width: 35rem;
   border-radius: 8px;
+}
+
+.Home_starIcon {
+  width: 100%;
+  border-left: 1px solid rgb(180, 179, 179);
+  border-right: 1px solid rgb(180, 179, 179);
 }
 .Home_starIcon p {
   display: flex;
