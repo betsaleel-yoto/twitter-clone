@@ -133,6 +133,12 @@ nav {
   display: flex;
   width: 20rem;
 }
+.Lelike img {
+  width: 27px;
+}
+.ButtonLike {
+  background: none;
+}
 .profile_text p {
   height: 2rem;
   border: 2px solid transparents;
