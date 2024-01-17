@@ -14,6 +14,18 @@ function Publications() {
             Likes="187"
             Partages="2"
           />
+
+          <PhotoPCertifNomProfile
+            NomDucompte="Betsaleel"
+            Certification="@Betsaleel.1m"
+          />
+          <ImageParagraphReation
+            TextPublie="Salut les gars"
+            Commentaire="89"
+            Retweet="2"
+            Likes="12"
+            Partages="43"
+          />
         </div>
       </div>
     </>

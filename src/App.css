@@ -55,6 +55,9 @@ input {
 .header {
   border: 2px solid transparent;
   width: 25rem;
+  position: fixed;
+  top: 0;
+  left: 15rem;
   height: 100vh;
 }
 nav {
@@ -120,7 +123,7 @@ nav {
   border-left: 1px solid rgb(180, 179, 179);
   border-right: 1px solid rgb(180, 179, 179);
   width: 50%;
-  margin-left: 2rem;
+  margin-left: 27rem;
 }
 
 .profile_text {
@@ -206,6 +209,16 @@ nav {
 }
 
 /* Partie search */
+.partie_search {
+  margin-left: 2rem;
+  height: 100vh;
+}
+
+.Trends_whoFollow {
+  border: 2px solid transparent;
+  position: sticky;
+  top: 0;
+}
 .differente_tendance {
   display: flex;
   gap: 12rem;
