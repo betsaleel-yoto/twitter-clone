@@ -8,6 +8,7 @@ function Publications() {
         <div className="titre_certifie_paragr_IconTweet">
           <PhotoPCertifNomProfile NomDucompte="CNN" Certification="@CNN.7m" />
           <ImageParagraphReation
+            ImagePublie="https://picsum.photos/200?random=1604299903000"
             TextPublie="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, consequatur? Beatae quasi quisquam deserunt consequuntur architecto illum neque provident consequatur, veniam, reprehenderit sunt quo obcaecati aliquid totam eaque tempore iure."
             Commentaire="57"
             Retweet="144"
@@ -20,6 +21,7 @@ function Publications() {
             Certification="@Betsaleel.1m"
           />
           <ImageParagraphReation
+            ImagePublie="https://picsum.photos/200?random=1604299903000"
             TextPublie="Salut les gars"
             Commentaire="89"
             Retweet="2"
@@ -32,6 +34,7 @@ function Publications() {
             Certification="@Betsaleel.1m"
           />
           <ImageParagraphReation
+            ImagePublie="https://picsum.photos/200?random=1604299903000"
             TextPublie="Salut les gars"
             Commentaire="89"
             Retweet="2"
@@ -44,6 +47,7 @@ function Publications() {
             Certification="@Betsaleel.1m"
           />
           <ImageParagraphReation
+            ImagePublie="https://picsum.photos/200?random=1604299903000"
             TextPublie="Salut les gars"
             Commentaire="89"
             Retweet="2"
