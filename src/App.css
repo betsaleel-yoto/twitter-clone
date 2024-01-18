@@ -138,6 +138,7 @@ nav {
 }
 .ButtonLike {
   background: none;
+  cursor: pointer;
 }
 .profile_text p {
   height: 2rem;
@@ -224,12 +225,8 @@ nav {
   border: 2px solid transparent;
   width: 30rem;
   margin-right: 3rem;
-}
-
-/* Partie search */
-.partie_search {
   margin-left: 2rem;
-  height: 100vh;
+  height: 300vh;
 }
 
 .Trends_whoFollow {
@@ -328,4 +325,21 @@ nav {
 
 .nbre_de_tweet {
   color: #6c7075;
+}
+
+/* partie Bookmarks */
+
+.Nav_Bookmarks_Footer {
+  display: flex;
+}
+
+.Bookmarks {
+  height: 100vh;
+  width: 50%;
+}
+
+/* Page Messages */
+
+.Nav_Box1_Box2 {
+  display: flex;
 }

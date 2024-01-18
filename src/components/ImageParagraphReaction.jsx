@@ -1,9 +1,14 @@
 import { useState } from "react";
 function ImageParagraphReation(props) {
   const [like, Setlike] = useState("../src/Icons/React.svg");
+  const [count, Setcount] = useState(0);
   console.log(like);
+  const handerCount = () => {
+    Setcount(count + 1);
+  };
   const handerLike = () => {
     Setlike("../src/Icons/love-png-30869.png");
+    handerCount();
   };
   return (
     <>
@@ -22,7 +27,7 @@ function ImageParagraphReation(props) {
           <button type="button" className="ButtonLike" onClick={handerLike}>
             <img src={like} alt="" />
           </button>
-          <span className="Nombre">{props.Likes}</span>
+          <span className="Nombre">{count}</span>
         </span>
         <span>
           <img src="../src/Icons/Share.svg" alt="" />
