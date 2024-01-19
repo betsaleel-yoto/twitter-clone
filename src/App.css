@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   background-color: black;
   color: white;
@@ -16,10 +18,12 @@ body {
   border: none;
   resize: none;
 }
+
 .Textarea_search:focus {
   outline: none;
   border: none;
 }
+
 .Textarea_Tweets:focus {
   outline: none;
   border: none;
@@ -30,19 +34,17 @@ body {
   border: none;
   resize: none;
 }
-
 .sous_titre_bas {
   color: #6c7075;
 }
 button {
   border: none;
 }
-
 input {
   border: none;
 }
-/* la plus grande div contenant la navbar, le body et la partie search */
 
+/* la plus grande div contenant la navbar, le body et la partie search */
 .nav_body_search {
   display: flex;
   border: 2px solid transparent;
@@ -57,12 +59,14 @@ input {
   width: 25rem;
   position: fixed;
   top: 0;
-  left: 15rem;
+  left: 24rem;
   height: 100vh;
 }
+
 nav {
   font-weight: bold;
 }
+
 .Twitter_icon {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -74,6 +78,7 @@ nav {
   flex-direction: column;
   gap: 2rem;
 }
+
 .espace_photo {
   width: 3rem;
   height: 3rem;
@@ -81,20 +86,24 @@ nav {
   border-radius: 100%;
   background-color: rgb(67, 67, 67);
 }
+
 .nom_utilisateur_bas {
   display: flex;
   margin-top: 17.5rem;
   gap: 15px;
 }
+
 .menu {
   position: relative;
   bottom: 7px;
   margin-left: 1rem;
 }
+
 .button_nav {
   position: relative;
-  top: 5rem;
-  width: 80%;
+  top: 1rem;
+  right: 7rem;
+  width: 50%;
   margin: auto;
   height: 3rem;
   border-radius: 30px;
@@ -102,6 +111,7 @@ nav {
   color: white;
   font-weight: 700;
 }
+
 .more_2_nav {
   position: relative;
   left: 12rem;
@@ -116,6 +126,7 @@ nav {
 .Sous_titre_profil {
   color: #6c7075;
 }
+
 /* le body */
 
 /* en-tete */
@@ -124,18 +135,22 @@ nav {
   margin-left: 27rem;
   height: 100vh;
 }
+
 .tweets {
   width: 100%;
   border-left: 1px solid rgb(180, 179, 179);
   border-right: 1px solid rgb(180, 179, 179);
 }
+
 .profile_text {
   display: flex;
   width: 20rem;
 }
+
 .Lelike img {
   width: 27px;
 }
+
 .ButtonLike {
   background: none;
   cursor: pointer;
@@ -157,7 +172,6 @@ nav {
   display: flex;
   gap: 20rem;
 }
-
 .button_body {
   padding: 5px;
   background-color: #1d9bf0;
@@ -175,12 +189,14 @@ nav {
   border-radius: 100%;
 }
 .tweet_image {
+  position: relative;
+  left: 3rem;
   border: 2px dashed red;
   height: 16.06rem;
-  width: 35rem;
+  width: 30rem;
   max-height: 16.06rem;
   max-width: 35rem;
-  border-radius: 8px;
+  border-radius: 20px;
 }
 
 .Home_starIcon {
@@ -188,13 +204,12 @@ nav {
   border-left: 1px solid rgb(180, 179, 179);
   border-right: 1px solid rgb(180, 179, 179);
 }
+
 .Home_starIcon p {
   display: flex;
   gap: 30rem;
 }
-
 /* Tweet */
-
 .photoTweet_certif {
   display: flex;
   border: 2px solid transparent;
@@ -207,20 +222,26 @@ nav {
 }
 .Tweet_text {
   padding: 4px;
+  position: relative;
+  left: 3rem;
+  width: 31rem;
 }
 .reaction {
   padding-top: 1rem;
   border-bottom: 1px solid rgb(180, 179, 179);
   display: flex;
-  gap: 7rem;
+  gap: 6rem;
 }
 
+.reaction .Principale {
+  position: relative;
+  left: 4rem;
+}
 .Nombre {
   position: relative;
   bottom: 5px;
 }
 /* la partie search */
-
 .partie_search {
   border: 2px solid transparent;
   width: 30rem;
@@ -228,7 +249,6 @@ nav {
   margin-left: 2rem;
   height: 300vh;
 }
-
 .Trends_whoFollow {
   border: 2px solid transparent;
   position: sticky;
@@ -249,7 +269,6 @@ nav {
   padding: 4px;
   border: 2px solid transparent;
 }
-
 .button_more {
   border: none;
   background: none;
@@ -265,40 +284,33 @@ nav {
   left: 1rem;
   gap: 20px;
 }
-
 .input_search img {
   width: 20px;
   padding: 10px;
 }
-
 .input_search {
   background-color: #16181c;
   border-radius: 30px;
 }
-
 .Trends {
   background-color: #16181c;
   border-radius: 20px;
   margin-top: 2rem;
 }
-
 .partie_whoToFollow {
   background-color: #16181c;
   border-radius: 20px;
   margin-top: 2rem;
 }
-
 .partie_whoToFollow button {
   position: relative;
   left: 1rem;
 }
-
 .partie_whoToFollow h1 {
   position: relative;
   left: 1rem;
   padding: 5px;
 }
-
 .Follow {
   background-color: white;
   border-radius: 30px;
@@ -307,39 +319,30 @@ nav {
   padding-top: 4px;
   padding-bottom: 4px;
 }
-
 .Trends p {
   position: relative;
   left: 1rem;
 }
-
 .partie_whoToFollow p {
   position: relative;
   right: 1rem;
 }
-
 .partie_search h2 {
   position: relative;
   left: 1rem;
 }
-
 .nbre_de_tweet {
   color: #6c7075;
 }
-
 /* partie Bookmarks */
-
 .Nav_Bookmarks_Footer {
   display: flex;
 }
-
 .Bookmarks {
   height: 100vh;
   width: 50%;
 }
-
 /* Page Messages */
-
 .Nav_Box1_Box2 {
   display: flex;
 }

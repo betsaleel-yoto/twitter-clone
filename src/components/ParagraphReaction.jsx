@@ -9,21 +9,21 @@ function ParagraphReaction(props) {
     <>
       <p className="Tweet_text">{props.TextPublie}</p>
       <p className="reaction">
-        <span>
+        <span className="Principale">
           <img src="../src/Icons/Reply.svg" alt="" />
           <span className="Nombre">{props.Commentaire}</span>
         </span>
-        <span>
+        <span className="Principale">
           <img src="../src/Icons/Retweet.svg" alt="" />
           <span className="Nombre">{props.Retweet}</span>
         </span>
-        <span className="Lelike">
+        <span className="Lelike Principale">
           <button type="button" className="ButtonLike" onClick={handerLike}>
             <img src={like} alt="" />
           </button>
           <span className="Nombre">{props.Likes}</span>
         </span>
-        <span>
+        <span className="Principale">
           <img src="../src/Icons/Share.svg" alt="" />
           <span className="Nombre">{props.Partages}</span>
         </span>

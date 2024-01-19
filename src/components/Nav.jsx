@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Nav() {
   return (
     <>
@@ -33,7 +34,9 @@ function Nav() {
               <span className="menu">Lists</span>
             </p>
             <p>
-              <img src="../src/Icons/Profile.svg" alt="" />
+              <a href="/Profile">
+                <img src="../src/Icons/Profile.svg" alt="" />
+              </a>
               <span className="menu">Profile</span>
             </p>
             <p>

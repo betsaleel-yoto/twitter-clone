@@ -5,7 +5,10 @@ function Profile() {
   return (
     <>
       <div className="Nav_Profile_Footer">
-        <Nav />
+        <div className="nav">
+          <Nav />
+        </div>
+
         <div className="Profile">
           <div className="box_profil_banner">
             <img src="" alt="" />
@@ -25,7 +28,9 @@ function Profile() {
             </div>
           </div>
         </div>
-        <Footer />
+        <div className="footer">
+          <Footer />
+        </div>
       </div>
     </>
   );
