@@ -249,6 +249,7 @@ nav {
   margin-left: 2rem;
   height: 300vh;
 }
+
 .Trends_whoFollow {
   border: 2px solid transparent;
   position: sticky;
@@ -283,6 +284,7 @@ nav {
   position: relative;
   left: 1rem;
   gap: 20px;
+  padding-bottom: 1rem;
 }
 .input_search img {
   width: 20px;
@@ -301,6 +303,7 @@ nav {
   background-color: #16181c;
   border-radius: 20px;
   margin-top: 2rem;
+  width: 25rem;
 }
 .partie_whoToFollow button {
   position: relative;
@@ -313,11 +316,12 @@ nav {
 }
 .Follow {
   background-color: white;
-  border-radius: 30px;
+  border-radius: 20px;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 4px;
   padding-bottom: 4px;
+  height: 25px;
 }
 .Trends p {
   position: relative;
@@ -332,8 +336,21 @@ nav {
   left: 1rem;
 }
 .nbre_de_tweet {
+  font-size: small;
   color: #6c7075;
 }
+
+.TrendingTurkey {
+  font-size: small;
+  color: #6c7075;
+}
+
+.newyork img {
+  width: 10px;
+  border: 2px solid red;
+  border-radius: 100%;
+}
+
 /* partie Bookmarks */
 .Nav_Bookmarks_Footer {
   display: flex;

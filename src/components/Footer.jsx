@@ -1,3 +1,5 @@
+import Newyork from "./newyork";
+import Trends from "./trends";
 function Footer() {
   return (
     <>
@@ -16,14 +18,16 @@ function Footer() {
               <img src="../src/Icons/Settings.svg" alt="" />
             </div>
             <div className="differente_tendance">
-              <p>Trending in Turkey</p>
+              <p className="TrendingTurkey">Trending in Turkey</p>
               <img src="../src/Icons/More-2.svg" alt="" />
             </div>
             <p className="Squid">
               #SQUID <br />
               <span className="nbre_de_tweet">2,066 Tweets</span>
             </p>
-
+            <Trends />
+            <Trends />
+            <Trends />
             <button
               type="button"
               id="PremierButtonFooter"
@@ -35,17 +39,9 @@ function Footer() {
 
           <div className="partie_whoToFollow">
             <h2>Who to follow</h2>
-            <div className="newyokConteneur">
-              <div className="newyorkTimeImage">
-                <img src="" alt="" />
-              </div>
-              <p className="newyork">The New York Times</p>
-              <img src="../src/Icons/Verified.svg" alt="" />
-              <button type="button" className="Follow">
-                Follow
-              </button>
-            </div>
-
+            <Newyork />
+            <Newyork />
+            <Newyork />
             <button type="button" className="button_more">
               Show More
             </button>
