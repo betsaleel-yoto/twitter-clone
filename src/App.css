@@ -182,7 +182,7 @@ nav {
   bottom: 7px;
   left: 2rem;
 }
-.photo_text {
+.photo_text img {
   width: 3rem;
   height: 3rem;
   border: 2px solid red;
