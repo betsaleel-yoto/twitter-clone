@@ -7,20 +7,20 @@ import { RouterProvider } from "react-router-dom";
 import ProfilVersionFinale from "./components/Pages/ProfilVersionFinal";
 import "./App.css";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: "/Profile",
-    element: <ProfilVersionFinale />,
-  },
-]);
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <App />,
+//   },
+//   {
+//     path: "/Profile",
+//     element: <ProfilVersionFinale />,
+//   },
+// ]);
 function App() {
   return (
     <>
-      <RouterProvider router={router} />
+      {/* <RouterProvider router={router} /> */}
 
       {/* <!-- grande div contenant la navbar le body ainsi la partie search --> */}
       <div className="nav_body_search">
