@@ -1,23 +1,7 @@
-import Footer from "./components/Footer";
-import Tweets from "./components/tweets";
-import Publications from "./components/Publications";
-import Nav from "./components/Nav";
-// import { createBrowserRouter } from "react-router-dom";
-// import { RouterProvider } from "react-router-dom";
-// import ProfilVersionFinale from "./components/Pages/ProfilVersionFinal";
-import "./App.css";
-
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <App />,
-//   },
-//   {
-//     path: "/Profile",
-//     element: <ProfilVersionFinale />,
-//   },
-// ]);
-function App() {
+import Profile from "./Profil";
+import Nav from "../Nav";
+import Footer from "../Footer";
+function ProfilVersionFinale() {
   return (
     <>
       {/* <RouterProvider router={router} /> */}
@@ -30,7 +14,7 @@ function App() {
       <!-- la partie post ou tweet --> */}
         <div className="timeline">
           {/* <!-- premère div principale du body --> */}
-
+          <Profile />
           <div className="Home_starIcon">
             <p>
               <span className="Page_title">Home</span>
@@ -42,10 +26,7 @@ function App() {
 
           {/* <!--  Deuxieme div Pp du body--> */}
 
-          <Tweets />
-
           {/* <!-- troisième div principale du body publications--> */}
-          <Publications />
         </div>
 
         {/* <!-- la partie search --> */}
@@ -55,4 +36,4 @@ function App() {
   );
 }
 
-export default App;
+export default ProfilVersionFinale;

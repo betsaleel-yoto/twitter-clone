@@ -8,7 +8,9 @@ function Nav() {
 
           <div className="nav_icon">
             <p>
-              <img src="../src/Icons/Home.svg" alt="" />
+              <a href="/">
+                <img src="../src/Icons/Home.svg" alt="" />
+              </a>
               <span className="menu"></span>Home
             </p>
             <p>
