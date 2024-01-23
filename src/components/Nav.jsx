@@ -8,9 +8,7 @@ function Nav() {
 
           <div className="nav_icon">
             <p>
-              <a href="/">
-                <img src="../src/Icons/Home.svg" alt="" />
-              </a>
+              <img src="../src/Icons/Home.svg" alt="" />
               <span className="menu"></span>Home
             </p>
             <p>
@@ -35,12 +33,16 @@ function Nav() {
               <img src="../src/Icons/Lists.svg" alt="" />
               <span className="menu">Lists</span>
             </p>
-            <p>
-              <a href="/Profile">
+            <Link
+              style={{ textDecoration: "none", color: "white" }}
+              to="/Profile"
+              className="Link"
+            >
+              <p>
                 <img src="../src/Icons/Profile.svg" alt="" />
-              </a>
-              <span className="menu">Profile</span>
-            </p>
+                <span className="menu">Profile</span>
+              </p>
+            </Link>
             <p>
               <img src="../src/Icons/More.svg" alt="" />
               <span className="menu">More</span>

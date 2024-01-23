@@ -1,11 +1,11 @@
-import Profile from "./Profil";
-import Nav from "../Nav";
 import Footer from "../Footer";
-function ProfilVersionFinale() {
+import Tweets from "../tweets";
+import Publications from "../Publications";
+import Nav from "../Nav";
+import "/src/App.css";
+function Home() {
   return (
     <>
-      {/* <RouterProvider router={router} /> */}
-
       {/* <!-- grande div contenant la navbar le body ainsi la partie search --> */}
       <div className="nav_body_search">
         {/* <!-- navbar --> */}
@@ -14,11 +14,22 @@ function ProfilVersionFinale() {
       <!-- la partie post ou tweet --> */}
         <div className="timeline">
           {/* <!-- premère div principale du body --> */}
-          <Profile />
+
+          <div className="Home_starIcon">
+            <p>
+              <span className="Page_title">Home</span>
+              <span className="top_tweets">
+                <img src="../src/Icons/Timeline-Prop.svg" alt="" />
+              </span>
+            </p>
+          </div>
 
           {/* <!--  Deuxieme div Pp du body--> */}
 
+          <Tweets />
+
           {/* <!-- troisième div principale du body publications--> */}
+          <Publications />
         </div>
 
         {/* <!-- la partie search --> */}
@@ -28,4 +39,4 @@ function ProfilVersionFinale() {
   );
 }
 
-export default ProfilVersionFinale;
+export default Home;
