@@ -7,10 +7,13 @@ function Nav() {
           <img src="../src/Icons/Twitter.svg" alt="" className="Twitter_icon" />
 
           <div className="nav_icon">
-            <p>
-              <img src="../src/Icons/Home.svg" alt="" />
-              <span className="menu"></span>Home
-            </p>
+            <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+              <p>
+                <img src="../src/Icons/Home.svg" alt="" />
+                <span className="menu"></span>Home
+              </p>
+            </Link>
+
             <p>
               <img src="../src/Icons/Explore/Fill.svg" alt="" />
               <span className="menu">Explore</span>
