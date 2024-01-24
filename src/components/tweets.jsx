@@ -4,10 +4,7 @@ function Tweets(props) {
       <div className="tweet_editor">
         <div className="profile_text">
           <div className="photo_text">
-            <img
-              src="https://picsum.photos/1024/200?random=1346822958006886400"
-              alt=""
-            />
+            <img src="https://picsum.photos/200?random=1604084613000" alt="" />
           </div>
           <textarea name="" id="" className="Textarea_Tweets">
             What's Happening?

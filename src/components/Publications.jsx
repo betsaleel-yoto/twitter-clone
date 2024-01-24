@@ -6,9 +6,13 @@ function Publications() {
     <>
       <div className="tweets">
         <div className="titre_certifie_paragr_IconTweet">
-          <PhotoPCertifNomProfile NomDucompte="CNN" Certification="@CNN.7m" />
+          <PhotoPCertifNomProfile
+            photoDuProfil="https://picsum.photos/200?random=1604084613000"
+            NomDucompte="CNN"
+            Certification="@CNN.7m"
+          />
           <ImageParagraphReation
-            ImagePublie="https://picsum.photos/200?random=1604299903000"
+            ImagePublie="https://picsum.photos/200?random=1315091604496158720"
             TextPublie="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, consequatur? Beatae quasi quisquam deserunt consequuntur architecto illum neque provident consequatur, veniam, reprehenderit sunt quo obcaecati aliquid totam eaque tempore iure."
             Commentaire="57"
             Retweet="144"
@@ -17,11 +21,12 @@ function Publications() {
           />
 
           <PhotoPCertifNomProfile
+            photoDuProfil="https://picsum.photos/200?random=1604084613000"
             NomDucompte="Betsaleel"
             Certification="@Betsaleel.1m"
           />
           <ImageParagraphReation
-            ImagePublie="https://picsum.photos/200?random=1604299903000"
+            ImagePublie="https://picsum.photos/200?random=1322252819299135488"
             TextPublie="Salut les gars"
             Commentaire="89"
             Retweet="2"
@@ -30,11 +35,12 @@ function Publications() {
           />
 
           <PhotoPCertifNomProfile
+            photoDuProfil="https://picsum.photos/200?random=1604084613000"
             NomDucompte="Betsaleel"
             Certification="@Betsaleel.1m"
           />
           <ImageParagraphReation
-            ImagePublie="https://picsum.photos/200?random=1604299903000"
+            ImagePublie="https://picsum.photos/200?random=1322252819299135488"
             TextPublie="Salut les gars"
             Commentaire="89"
             Retweet="2"
@@ -43,11 +49,12 @@ function Publications() {
           />
 
           <PhotoPCertifNomProfile
+            photoDuProfil="https://picsum.photos/200?random=1604084613000"
             NomDucompte="Betsaleel"
             Certification="@Betsaleel.1m"
           />
           <ImageParagraphReation
-            ImagePublie="https://picsum.photos/200?random=1604299903000"
+            ImagePublie="https://picsum.photos/200?random=1322252819299135488"
             TextPublie="Salut les gars"
             Commentaire="89"
             Retweet="2"
