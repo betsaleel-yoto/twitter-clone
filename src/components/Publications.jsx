@@ -5,89 +5,375 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 function Publications() {
-  const [user, setuser] = useState("");
-  const [post, setpost] = useState("");
+  // utilisateur 1
+
+  const [user1, setuser1] = useState("");
+  const [post1, setpost1] = useState("");
+  const [date1, setdate1] = useState("");
+  const [Photoprofil1, setPhotoprofil1] = useState("");
+  const [imagePublie1, setimagePublie1] = useState("");
+
   useEffect(() => {
     axios
-      .get("https://jsonplaceholder.typicode.com/users")
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/users")
       .then((response) => {
         let user = response.data.filter(function (personne) {
           return personne.id === 1;
         });
-        setuser(user[0].name);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
-  useEffect(() => {
-    axios
-      .get("https://jsonplaceholder.typicode.com/posts")
-      .then((response) => {
-        let post = response.data.filter(function (personne) {
-          return personne.id === 1;
-        });
-        setpost(post[0].body);
+        setuser1(user[0].name);
       })
       .catch((err) => {
         console.log(err);
       });
   }, []);
 
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/posts")
+      .then((response) => {
+        let post = response.data.filter(function (personne) {
+          return personne.id === 1;
+        });
+        setpost1(post[0].body);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/users")
+      .then((response) => {
+        let date = response.data.filter(function (personne) {
+          return personne.id === 1;
+        });
+        setdate1(date[0].Joined);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/users")
+      .then((response) => {
+        let PhotoDeprofil = response.data.filter(function (personne) {
+          return personne.id === 1;
+        });
+        setPhotoprofil1(PhotoDeprofil[0].thumbnailProfil);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/posts")
+      .then((response) => {
+        let imagePublie = response.data.filter(function (personne) {
+          return personne.id === 1;
+        });
+        setimagePublie1(imagePublie[0].thumbnailUrl);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  // utilisateur 2
+
+  const [user2, setuser2] = useState("");
+  const [post2, setpost2] = useState("");
+  const [date2, setdate2] = useState("");
+  const [Photoprofil2, setPhotoprofil2] = useState("");
+  const [imagePublie2, setimagePublie2] = useState("");
+
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/users")
+      .then((response) => {
+        let user = response.data.filter(function (personne) {
+          return personne.id === 2;
+        });
+        setuser2(user[0].name);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/posts")
+      .then((response) => {
+        let post = response.data.filter(function (personne) {
+          return personne.id === 2;
+        });
+        setpost2(post[0].body);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/users")
+      .then((response) => {
+        let date = response.data.filter(function (personne) {
+          return personne.id === 2;
+        });
+        setdate2(date[0].Joined);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/users")
+      .then((response) => {
+        let PhotoDeprofil = response.data.filter(function (personne) {
+          return personne.id === 2;
+        });
+        setPhotoprofil2(PhotoDeprofil[0].thumbnailProfil);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/posts")
+      .then((response) => {
+        let imagePublie = response.data.filter(function (personne) {
+          return personne.id === 2;
+        });
+        setimagePublie2(imagePublie[0].thumbnailUrl);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  // utilisateur 3
+
+  const [user3, setuser3] = useState("");
+  const [post3, setpost3] = useState("");
+  const [date3, setdate3] = useState("");
+  const [Photoprofil3, setPhotoprofil3] = useState("");
+  const [imagePublie3, setimagePublie3] = useState("");
+
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/users")
+      .then((response) => {
+        let user = response.data.filter(function (personne) {
+          return personne.id === 3;
+        });
+        setuser3(user[0].name);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/posts")
+      .then((response) => {
+        let post = response.data.filter(function (personne) {
+          return personne.id === 3;
+        });
+        setpost3(post[0].body);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/users")
+      .then((response) => {
+        let date = response.data.filter(function (personne) {
+          return personne.id === 3;
+        });
+        setdate3(date[0].Joined);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/users")
+      .then((response) => {
+        let PhotoDeprofil = response.data.filter(function (personne) {
+          return personne.id === 3;
+        });
+        setPhotoprofil3(PhotoDeprofil[0].thumbnailProfil);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/posts")
+      .then((response) => {
+        let imagePublie = response.data.filter(function (personne) {
+          return personne.id === 3;
+        });
+        setimagePublie3(imagePublie[0].thumbnailUrl);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  // utilisateur 4
+
+  const [user4, setuser4] = useState("");
+  const [post4, setpost4] = useState("");
+  const [date4, setdate4] = useState("");
+  const [Photoprofil4, setPhotoprofil4] = useState("");
+  const [imagePublie4, setimagePublie4] = useState("");
+
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/users")
+      .then((response) => {
+        let user = response.data.filter(function (personne) {
+          return personne.id === 4;
+        });
+        setuser4(user[0].name);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/posts")
+      .then((response) => {
+        let post = response.data.filter(function (personne) {
+          return personne.id === 4;
+        });
+        setpost4(post[0].body);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/users")
+      .then((response) => {
+        let date = response.data.filter(function (personne) {
+          return personne.id === 4;
+        });
+        setdate4(date[0].Joined);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/users")
+      .then((response) => {
+        let PhotoDeprofil = response.data.filter(function (personne) {
+          return personne.id === 4;
+        });
+        setPhotoprofil4(PhotoDeprofil[0].thumbnailProfil);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/posts")
+      .then((response) => {
+        let imagePublie = response.data.filter(function (personne) {
+          return personne.id === 4;
+        });
+        setimagePublie4(imagePublie[0].thumbnailUrl);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
   return (
     <>
       <div className="tweets">
         <div className="titre_certifie_paragr_IconTweet">
+          {/* utilisateur 1 */}
           <PhotoPCertifNomProfile
-            photoDuProfil="https://picsum.photos/200?random=1604084613000"
-            NomDucompte={user}
-            Certification={`@${user}.7m`}
+            photoDuProfil={Photoprofil1}
+            NomDucompte={user1}
+            Certification={`@${user1}.${date1}`}
           />
           <ImageParagraphReation
-            ImagePublie="https://picsum.photos/200?random=1315091604496158720"
-            TextPublie={post}
+            ImagePublie={imagePublie1}
+            TextPublie={post1}
             Commentaire="57"
             Retweet="144"
             Likes="187"
             Partages="2"
           />
 
+          {/* utilisateur 2 */}
+
           <PhotoPCertifNomProfile
-            photoDuProfil="https://picsum.photos/200?random=1604084613000"
-            NomDucompte="Betsaleel"
-            Certification="@Betsaleel.1m"
+            photoDuProfil={Photoprofil2}
+            NomDucompte={user2}
+            Certification={`${user2}.${date2}`}
           />
           <ImageParagraphReation
-            ImagePublie="https://picsum.photos/200?random=1322252819299135488"
-            TextPublie="Salut les gars"
+            ImagePublie={imagePublie2}
+            TextPublie={post2}
             Commentaire="89"
             Retweet="2"
             Likes="12"
             Partages="43"
           />
-
+          {/* utilisateur 3 */}
           <PhotoPCertifNomProfile
-            photoDuProfil="https://picsum.photos/200?random=1604084613000"
-            NomDucompte="Betsaleel"
-            Certification="@Betsaleel.1m"
+            photoDuProfil={Photoprofil3}
+            NomDucompte={user3}
+            Certification={`${user3}.${date3}`}
           />
           <ImageParagraphReation
-            ImagePublie="https://picsum.photos/200?random=1322252819299135488"
-            TextPublie="Salut les gars"
+            ImagePublie={imagePublie3}
+            TextPublie={post3}
             Commentaire="89"
             Retweet="2"
             Likes="12"
             Partages="43"
           />
+          {/* utilisateur 4 */}
 
           <PhotoPCertifNomProfile
-            photoDuProfil="https://picsum.photos/200?random=1604084613000"
-            NomDucompte="Betsaleel"
-            Certification="@Betsaleel.1m"
+            photoDuProfil={Photoprofil4}
+            NomDucompte={user4}
+            Certification={`${user4}.${date4}`}
           />
           <ImageParagraphReation
-            ImagePublie="https://picsum.photos/200?random=1322252819299135488"
-            TextPublie="Salut les gars"
+            ImagePublie={imagePublie4}
+            TextPublie={post4}
             Commentaire="89"
             Retweet="2"
             Likes="12"
