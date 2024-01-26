@@ -113,6 +113,18 @@ function Publications() {
       });
   }, []);
 
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/comments")
+      .then((response) => {
+        let nbredecomment = response.data;
+        setnbreComment(nbredecomment.length);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   // utilisateur 2
 
   const [user2, setuser2] = useState("");
@@ -450,7 +462,7 @@ function Publications() {
           <ImageParagraphReation
             ImagePublie={imagePublie1}
             TextPublie={post1}
-            Commentaire="57"
+            Commentaire={nbreComment}
             Retweet={repost1}
             Likes={nbreLike1}
             Partages="2"
@@ -466,7 +478,7 @@ function Publications() {
           <ImageParagraphReation
             ImagePublie={imagePublie2}
             TextPublie={post2}
-            Commentaire="89"
+            Commentaire={nbreComment}
             Retweet={repost2}
             Likes={nbreLike2}
             Partages="43"
@@ -480,7 +492,7 @@ function Publications() {
           <ImageParagraphReation
             ImagePublie={imagePublie3}
             TextPublie={post3}
-            Commentaire="89"
+            Commentaire={nbreComment}
             Retweet={repost3}
             Likes={nbreLike3}
             Partages="43"
@@ -495,7 +507,7 @@ function Publications() {
           <ImageParagraphReation
             ImagePublie={imagePublie4}
             TextPublie={post4}
-            Commentaire="89"
+            Commentaire={nbreComment}
             Retweet={repost4}
             Likes={nbreLike4}
             Partages="43"
