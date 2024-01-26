@@ -368,13 +368,10 @@ nav {
 
 /* page profil */
 
-.Nav_Profile_Footer {
-  display: flex;
-}
-
 .Profile {
+  display: flex;
   height: 100vh;
-  width: 50%;
+  width: 100%;
 }
 
 .photo_profil_et_button {

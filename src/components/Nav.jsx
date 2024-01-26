@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-function Nav() {
+function Nav(props) {
   return (
     <>
       <nav>
