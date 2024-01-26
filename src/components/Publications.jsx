@@ -1,6 +1,5 @@
 import PhotoPCertifNomProfile from "./PhotoTweet-cert-photoP";
 import ImageParagraphReation from "./ImageParagraphReaction";
-import ParagraphReaction from "./ParagraphReaction";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -12,6 +11,9 @@ function Publications() {
   const [date1, setdate1] = useState("");
   const [Photoprofil1, setPhotoprofil1] = useState("");
   const [imagePublie1, setimagePublie1] = useState("");
+  const [nbreLike1, setnbreLike1] = useState("");
+  const [repost1, setrepost1] = useState("");
+  const [nbreComment, setnbreComment] = useState(0);
 
   useEffect(() => {
     axios
@@ -83,6 +85,34 @@ function Publications() {
       });
   }, []);
 
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/posts")
+      .then((response) => {
+        let nbrerepost = response.data.filter(function (personne) {
+          return personne.id === 1;
+        });
+        setrepost1(nbrerepost[0].repost);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/posts")
+      .then((response) => {
+        let nbrelike = response.data.filter(function (personne) {
+          return personne.id === 1;
+        });
+        setnbreLike1(nbrelike[0].like);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   // utilisateur 2
 
   const [user2, setuser2] = useState("");
@@ -90,6 +120,8 @@ function Publications() {
   const [date2, setdate2] = useState("");
   const [Photoprofil2, setPhotoprofil2] = useState("");
   const [imagePublie2, setimagePublie2] = useState("");
+  const [nbreLike2, setnbreLike2] = useState("");
+  const [repost2, setrepost2] = useState("");
 
   useEffect(() => {
     axios
@@ -161,6 +193,34 @@ function Publications() {
       });
   }, []);
 
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/posts")
+      .then((response) => {
+        let nbrerepost = response.data.filter(function (personne) {
+          return personne.id === 2;
+        });
+        setrepost2(nbrerepost[0].repost);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/posts")
+      .then((response) => {
+        let nbrelike = response.data.filter(function (personne) {
+          return personne.id === 2;
+        });
+        setnbreLike2(nbrelike[0].like);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   // utilisateur 3
 
   const [user3, setuser3] = useState("");
@@ -168,6 +228,8 @@ function Publications() {
   const [date3, setdate3] = useState("");
   const [Photoprofil3, setPhotoprofil3] = useState("");
   const [imagePublie3, setimagePublie3] = useState("");
+  const [nbreLike3, setnbreLike3] = useState("");
+  const [repost3, setrepost3] = useState("");
 
   useEffect(() => {
     axios
@@ -239,6 +301,34 @@ function Publications() {
       });
   }, []);
 
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/posts")
+      .then((response) => {
+        let nbrerepost = response.data.filter(function (personne) {
+          return personne.id === 3;
+        });
+        setrepost3(nbrerepost[0].repost);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/posts")
+      .then((response) => {
+        let nbrelike = response.data.filter(function (personne) {
+          return personne.id === 3;
+        });
+        setnbreLike3(nbrelike[0].like);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   // utilisateur 4
 
   const [user4, setuser4] = useState("");
@@ -246,6 +336,8 @@ function Publications() {
   const [date4, setdate4] = useState("");
   const [Photoprofil4, setPhotoprofil4] = useState("");
   const [imagePublie4, setimagePublie4] = useState("");
+  const [nbreLike4, setnbreLike4] = useState("");
+  const [repost4, setrepost4] = useState("");
 
   useEffect(() => {
     axios
@@ -316,6 +408,35 @@ function Publications() {
         console.log(err);
       });
   }, []);
+
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/posts")
+      .then((response) => {
+        let nbrerepost = response.data.filter(function (personne) {
+          return personne.id === 4;
+        });
+        setrepost4(nbrerepost[0].repost);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("https://my-json-server.typicode.com/amare53/twiterdb/posts")
+      .then((response) => {
+        let nbrelike = response.data.filter(function (personne) {
+          return personne.id === 4;
+        });
+        setnbreLike4(nbrelike[0].like);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   return (
     <>
       <div className="tweets">
@@ -330,8 +451,8 @@ function Publications() {
             ImagePublie={imagePublie1}
             TextPublie={post1}
             Commentaire="57"
-            Retweet="144"
-            Likes="187"
+            Retweet={repost1}
+            Likes={nbreLike1}
             Partages="2"
           />
 
@@ -346,8 +467,8 @@ function Publications() {
             ImagePublie={imagePublie2}
             TextPublie={post2}
             Commentaire="89"
-            Retweet="2"
-            Likes="12"
+            Retweet={repost2}
+            Likes={nbreLike2}
             Partages="43"
           />
           {/* utilisateur 3 */}
@@ -360,8 +481,8 @@ function Publications() {
             ImagePublie={imagePublie3}
             TextPublie={post3}
             Commentaire="89"
-            Retweet="2"
-            Likes="12"
+            Retweet={repost3}
+            Likes={nbreLike3}
             Partages="43"
           />
           {/* utilisateur 4 */}
@@ -375,8 +496,8 @@ function Publications() {
             ImagePublie={imagePublie4}
             TextPublie={post4}
             Commentaire="89"
-            Retweet="2"
-            Likes="12"
+            Retweet={repost4}
+            Likes={nbreLike4}
             Partages="43"
           />
         </div>

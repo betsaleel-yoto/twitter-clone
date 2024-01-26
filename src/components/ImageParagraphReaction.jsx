@@ -40,7 +40,7 @@ function ImageParagraphReation(props) {
           <button type="button" className="ButtonLike" onClick={handleLike}>
             <img src={like} alt="" />
           </button>
-          <span className="Nombre">{count}</span>
+          <span className="Nombre">{`${props.Likes}${count}`}</span>
         </span>
         <span className="Principale">
           <img src="../src/Icons/Share.svg" alt="" />
