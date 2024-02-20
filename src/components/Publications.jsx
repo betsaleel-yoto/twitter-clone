@@ -17,12 +17,12 @@ function Publications() {
 
   useEffect(() => {
     axios
-      .get("https://my-json-server.typicode.com/amare53/twiterdb/users")
+      .get("http://localhost:3002/users")
       .then((response) => {
         let user = response.data.filter(function (personne) {
-          return personne.id === 1;
+          return personne.id === 4;
         });
-        setuser1(user[0].name);
+        setuser1(user[0].username);
       })
       .catch((err) => {
         console.log(err);
