@@ -8,31 +8,31 @@ function Nav() {
 
           <div className="nav_icon">
             <Link to="/" style={{ textDecoration: "none", color: "white" }}>
-              <p>
+              <p className="Hov">
                 <img src="../src/Icons/Home.svg" alt="" />
                 <span className="menu"></span>Home
               </p>
             </Link>
 
-            <p>
+            <p className="Hov">
               <img src="../src/Icons/Explore/Fill.svg" alt="" />
               <span className="menu">Explore</span>
             </p>
-            <p>
+            <p className="Hov">
               <img src="../src/Icons/Notifications.svg" alt="" />
               <span className="menu">Notifications</span>
             </p>
-            <p>
+            <p className="Hov">
               <img src="../src/Icons/Messages.svg" alt="" />
               <span className="menu">Messages</span>
             </p>
-            <p>
+            <p className="Hov">
               <img src="../src/Icons/Bookmarks.svg" alt="" />
               <span className="menu">
                 Bookmarks<span></span>
               </span>
             </p>
-            <p>
+            <p className="Hov">
               <img src="../src/Icons/Lists.svg" alt="" />
               <span className="menu">Lists</span>
             </p>
@@ -41,12 +41,12 @@ function Nav() {
               to="/Profile"
               className="Link"
             >
-              <p>
+              <p className="Hov">
                 <img src="../src/Icons/Profile.svg" alt="" />
                 <span className="menu">Profile</span>
               </p>
             </Link>
-            <p>
+            <p className="Hov">
               <img src="../src/Icons/More.svg" alt="" />
               <span className="menu">More</span>
             </p>
