@@ -4,9 +4,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 function Publications() {
-
   // utilisateur 1
-  
+
   const [user1, setuser1] = useState("");
   const [post1, setpost1] = useState("");
   const [date1, setdate1] = useState("");
