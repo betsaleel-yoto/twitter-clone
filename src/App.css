@@ -384,3 +384,117 @@ nav {
 .photo_profil_et_button {
   display: flex;
 }
+
+/* Pages login et signup */
+/* Styles spécifiques pour Login */
+.container-login {
+  background-color: #fff; /* Couleur de fond */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre */
+  width: 20%;
+  margin: auto;
+  margin-top: 20rem;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-login h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-login input[type="text"],
+.form-login input[type="password"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-login button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1da1f2; /* Couleur de fond du bouton */
+  color: #fff; /* Couleur du texte du bouton */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-login button:hover {
+  background-color: #0f8de4; /* Couleur de fond au survol */
+}
+
+.form-login p {
+  text-align: center;
+}
+
+.form-login a {
+  color: #1da1f2; /* Couleur du lien */
+  text-decoration: none;
+}
+
+.form-login a:hover {
+  text-decoration: underline;
+}
+
+/* Styles spécifiques pour Signup */
+.container-signup {
+  background-color: #fff; /* Couleur de fond */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre */
+  width: 20%;
+  margin: auto;
+  margin-top: 20rem;
+}
+
+.form-signup {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-signup h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-signup input[type="text"],
+.form-signup input[type="email"],
+.form-signup input[type="password"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-signup button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1da1f2; /* Couleur de fond du bouton */
+  color: #fff; /* Couleur du texte du bouton */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-signup button:hover {
+  background-color: #0f8de4; /* Couleur de fond au survol */
+}
+
+.form-signup p {
+  text-align: center;
+}
+
+.form-signup a {
+  color: #1da1f2; /* Couleur du lien */
+  text-decoration: none;
+}
+
+.form-signup a:hover {
+  text-decoration: underline;
+}

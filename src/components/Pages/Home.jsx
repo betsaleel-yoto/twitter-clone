@@ -3,6 +3,8 @@ import Tweets from "../tweets";
 import Publications from "../Publications";
 import Nav from "../Nav";
 import "/src/App.css";
+import Login from "./login";
+import Signup from "./singnup";
 function Home() {
   return (
     <>
@@ -11,7 +13,7 @@ function Home() {
         {/* <!-- navbar --> */}
         <Nav />
         {/* <!-- le body -->
-      <!-- la partie post ou tweet --> */}
+     <!-- la partie post ou tweet --> */}
         <div className="timeline">
           {/* <!-- premère div principale du body --> */}
 
