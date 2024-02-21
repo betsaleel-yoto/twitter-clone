@@ -1,7 +1,7 @@
 function Signup() {
   return (
     <div className="container-signup">
-      <form className="form-signup" action="" method="post">
+      <form className="form-signup" action="http://localhost:3002/users" method="post">
         <h2>Sign Up</h2>
         <input type="text" placeholder="Username" name="username" required />
         <input type="email" placeholder="Email" name="email" required />
