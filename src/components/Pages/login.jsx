@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Login() {
   return (
     <div className="container-login">
@@ -12,7 +13,7 @@ function Login() {
         />
         <button type="submit">Login</button>
         <p>
-          Don't have an account? <a href="">Sign Up</a>
+          Don't have an account? <Link to="/signup">Sign Up</Link>
         </p>
       </form>
     </div>
